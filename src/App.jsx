@@ -1,12 +1,10 @@
-import logo from './assets/logo.svg'
+import { Aside } from "./components/Asides"
 
 function App() {
 
   return (
     <div className='min-h-screen bg-neutral-background'>
-      <aside>
-        <img src={logo} alt="" />
-      </aside>
+      <Aside />
     </div>
   )
 }
