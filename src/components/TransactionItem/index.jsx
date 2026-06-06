@@ -6,7 +6,9 @@ export const TransactionItem = ({ item }) => {
     return (
         <div className="flex justify-between">
             <div className={`flex flex-col gap-2 text-[15px] leading-[120%] font-medium ${detailAdditionalClassName}`}>
-                <p className="m-0 font-bold">{item.description}</p>
+                <p className="m-0">
+                    <strong>{item.description}</strong>
+                </p>
                 <p className="m-0">{formater.format(item.value)}</p>
             </div>
             <div>
